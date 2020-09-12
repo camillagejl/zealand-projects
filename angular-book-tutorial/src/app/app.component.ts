@@ -14,9 +14,8 @@ import {AdvertisementService} from './advertisement.service';
           Submit
       </button>
       <button (click)="onClickMe($event)">Submit with event</button>
-      <products></products>
-      <advertisements></advertisements>
-      <rating></rating>
+      <rating [rating]="4"></rating>
+    <products></products>
   `,
   providers: [ProductService, AdvertisementService]
 })
