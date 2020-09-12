@@ -6,13 +6,28 @@ import {AdvertisementService} from './advertisement.service';
   selector: 'app-root',
   template: `
       <h1>{{ title }}</h1>
+      <img src="{{ imageUrl }}"/>
+      <button
+          class="btn btn-primary"
+          [class.disabled]="!isValid"
+      >
+          Submit
+      </button>
+      <button (click)="onClickMe($event)">Submit with event</button>
       <products></products>
       <advertisements></advertisements>
+      <rating></rating>
   `,
   providers: [ProductService, AdvertisementService]
 })
 
 export class AppComponent {
-  title = 'My First Angular App';
+  title = 'Zealand Angular Book App!';
+  imageUrl = 'https://www.w3schools.com/html/pic_mountain.jpg';
+  isValid = false;
+
+  onClickMe($event) {
+    console.log('Clicked', $event)
+  }
 }
 

@@ -5,10 +5,13 @@ import { AppComponent } from './app.component';
 
 import { ProductsComponent } from './products.component';
 import { AdvertisementsComponent} from './advertisements.component';
+import { StarComponent } from './star.component';
+import { StarfillComponent} from './starfill.component';
+import { RatingComponent } from './rating.component';
 
 @NgModule({
   declarations: [
-    AppComponent, ProductsComponent, AdvertisementsComponent
+    AppComponent, StarComponent, StarfillComponent, RatingComponent, ProductsComponent, AdvertisementsComponent
   ],
   imports: [
     BrowserModule
