@@ -9,7 +9,7 @@ import {AdvertisementService} from './advertisement.service';
       <img src="{{ imageUrl }}"/>
       <button
           class="btn btn-primary"
-          [class.disabled]="!isValid"
+          [disabled]="!isValid"
       >
           Submit
       </button>
