@@ -5,6 +5,12 @@ import {AdvertisementService} from './advertisement.service';
 @Component({
   selector: 'app-root',
   template: `
+    <bs-jumbotron>
+        <div class="heading">Hello World!</div>
+        <div class="body">This is a simple hero unit</div>
+        <div class="description">It uses utility classes</div>
+        <div class="button">Learn more</div>
+    </bs-jumbotron>
       <h1>{{ title }}</h1>
       <img src="{{ imageUrl }}"/>
       <button

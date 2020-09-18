@@ -5,9 +5,16 @@ import { ProductService } from './product.service';
   selector: 'products',
   template: `
       <h2>Products</h2>
+      <div *ngIf="products.length > 0; else loading">
       <div *ngFor="let product of products">
           <product [data]="product"></product>
       </div>
+      </div>
+    
+    <ng-template #loading>
+        No products to display
+    </ng-template>
+    
   `,
   providers: [ProductService]
 })

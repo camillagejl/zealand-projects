@@ -4,7 +4,7 @@ export class ProductService {
       {
         imageUrl: "http://loremflickr.com/150/150?random=1",
         productName: "Product 1",
-        releasedDate: "May 31, 2016",
+        releasedDate: new Date(2016, 5, 30),
         description: "Cras sit amet nibh libero, in gravida...",
         rating: 4,
         numOfReviews: 2
@@ -14,7 +14,7 @@ export class ProductService {
         productName: "Product 2",
         releasedDate: "October 31, 2016",
         description: "Cras sit amet nibh libero, in gravida...",
-        rating: 4,
+        rating: 1,
         numOfReviews: 2
       },
       {
@@ -22,7 +22,7 @@ export class ProductService {
         productName: "Product 3",
         releasedDate: "July 30, 2016",
         description: "Cras sit amet nibh libero, in gravida...",
-        rating: 4,
+        rating: 5,
         numOfReviews: 2
       },
     ];
