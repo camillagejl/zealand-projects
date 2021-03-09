@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.appCard {
+  padding: 16px;
+  margin: 16px;
+  border: 3px solid #9d8613;
+  background: #e9db9f;
+}
+
+.boxHeading {
+  font-size: 48px;
+  margin: 0 0 24px 0;
+  padding: 0;
+  line-height: 1em;
+}
+
+.amountGroup {
+  margin-bottom: 8px;
+}
+
+.amountButton {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border: 2px solid #8d5111;
+  color: #402002;
+  cursor: pointer;
+  background-color: #bc753a;
+  transition: all 0.15s;
+}
+
+.amountButton + .amountButton {
+  border-left: none;
+}
+
+.amountButton:hover, .amountButton_active {
+  background-color: #d68d51;
+}
+
+.actionButton {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border: 2px solid #537212;
+  color: #2e3e06;
+  cursor: pointer;
+  background-color: #8fbc3a;
+  transition: all 0.15s;
+}
+
+.actionButton:hover {
+  background-color: #adcf6a;
+}
+
+.actionButton:disabled {
+  background-color: #bebebe;
+  border: 2px solid #666666;
+  color: #6d6d6d;
+  cursor: not-allowed;
+}
+
+.reportValue {
+  font-size: 20px;
+}
+
+.reportValue span {
+  display: inline-block;
+  width: 150px;
+  font-weight: bold;
+}

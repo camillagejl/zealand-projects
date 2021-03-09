@@ -1,0 +1,28 @@
+ul {
+    list-style-type: none;
+    margin: 16px;
+    border: 3px solid #e9db9f;
+    background: #9d8613;
+}
+
+li {
+    display: inline-block;
+    padding: 16px;
+    margin: 0;
+}
+
+a {
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+
+a:visited {
+    color: whitesmoke;
+}
+
+
+a:hover {
+    color: #c6e2e2;
+}
+
